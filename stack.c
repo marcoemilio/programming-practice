@@ -5,17 +5,7 @@
 *
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef struct StackElement{     
-    void* data;     
-    struct StackElement* next;     
-}StackElement;
-
-typedef struct Stack{
-	StackElement* top;
-}Stack;
+#include <stack.h>
 
 StackElement* create_element_stack(void* data, StackElement* next)
 {
@@ -79,10 +69,4 @@ void clear_stack(Stack* __stack)
 int check_stack(Stack* __stack)
 {
 	return __stack->top != NULL;
-}
-
-int main(int argc, char const *argv[])
-{
-	printf("Stack\n");
-	return(0);
 }
