@@ -5,7 +5,7 @@
 *
 */
 
-#include <stack.h>
+#include "stack.h"
 
 StackElement* create_element_stack(void* data, StackElement* next)
 {
